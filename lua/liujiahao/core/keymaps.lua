@@ -38,3 +38,10 @@ keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>")
 
 -- lazygit
 keymap.set("n", "<leader>gg", ":LazyGit<CR>") -- open the lazygit
+
+-- vim-table-mode
+keymap.set("n", "<leader>tme", ":TableModeEnable<CR>") -- enable table mode
+keymap.set("n", "<leader>tmd", ":TableModeDisable<CR>") -- disable table mode
+
+-- markdown preview
+keymap.set("n", "<leader>mdp", ":MarkdownPreview<CR>") -- open markdown preview
