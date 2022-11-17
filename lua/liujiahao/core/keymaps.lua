@@ -45,3 +45,4 @@ keymap.set("n", "<leader>tmd", ":TableModeDisable<CR>") -- disable table mode
 
 -- markdown preview
 keymap.set("n", "<leader>mdp", ":MarkdownPreview<CR>") -- open markdown preview
+keymap.set("n", "<leader>mdps", ":MarkdownPreviewStop<CR>") -- close markdown preview
