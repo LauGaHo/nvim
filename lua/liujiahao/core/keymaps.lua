@@ -49,24 +49,21 @@ keymap.set("n", "<leader>tmd", ":TableModeDisable<CR>") -- disable table mode
 keymap.set("n", "<leader>mdp", ":MarkdownPreview<CR>") -- open markdown preview
 keymap.set("n", "<leader>mdps", ":MarkdownPreviewStop<CR>") -- close markdown preview
 
--- barbar
-keymap.set("n", "<C-;>", ":BufferPrevious<CR>") -- Move to previous
-keymap.set("n", "<C-'>", ":BufferNext<CR>") -- Move to next
-keymap.set("n", "<C-<>", ":BufferMovePrevious<CR>") -- Re-order to previous
-keymap.set("n", "<C->>", ":BufferMoveNext<CR>") -- Re-order to next
-keymap.set("n", "<leader>1", ":BufferGoto 1<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>2", ":BufferGoto 2<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>3", ":BufferGoto 3<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>4", ":BufferGoto 4<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>5", ":BufferGoto 5<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>6", ":BufferGoto 6<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>7", ":BufferGoto 7<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>8", ":BufferGoto 8<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>9", ":BufferGoto 9<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>0", ":BufferGoto 0<CR>") -- Goto buffer in position
-keymap.set("n", "<C-p>", ":BufferPin<CR>") -- Pin/unpin buffer
-keymap.set("n", "<C-c>", ":BufferClose<CR>") -- Close buffer
-keymap.set("n", "<leader>bb", ":BufferOrderByBufferNumber<CR>") -- Order By Buffer Number
-keymap.set("n", "<leader>bd", ":BufferOrderByDirectory<CR>") -- Order By Directory
-keymap.set("n", "<leader>bl", ":BufferOrderByLanguage<CR>") -- Order By Language
-keymap.set("n", "<leader>bw", ":BufferOrderByWindowNumber<CR>") -- Order By Window Number
+-- bufferline
+keymap.set("n", "<C-;>", ":BufferLineCyclePrev<CR>") -- Move to previous
+keymap.set("n", "<C-'>", ":BufferLineCycleNext<CR>") -- Move to next
+keymap.set("n", "<C-<>", ":BufferLineMovePrev<CR>") -- Re-order to previous
+keymap.set("n", "<C->>", ":BufferLineMoveNext<CR>") -- Re-order to next
+keymap.set("n", "<leader>1", ":BufferLineGoToBuffer 1<CR>") -- Goto buffer in position
+keymap.set("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>") -- Goto buffer in position
+keymap.set("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>") -- Goto buffer in position
+keymap.set("n", "<leader>4", ":BufferLineGoToBuffer 4<CR>") -- Goto buffer in position
+keymap.set("n", "<leader>5", ":BufferLineGoToBuffer 5<CR>") -- Goto buffer in position
+keymap.set("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>") -- Goto buffer in position
+keymap.set("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>") -- Goto buffer in position
+keymap.set("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>") -- Goto buffer in position
+keymap.set("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>") -- Goto buffer in position
+keymap.set("n", "<leader>0", ":BufferLineGoToBuffer 0<CR>") -- Goto buffer in position
+keymap.set("n", "<leader>bp", ":BufferLinePick<CR>") -- Pick a tab
+keymap.set("n", "<leader>pd", ":BufferLinePickClose<CR>") -- Pick a tab to delete
+keymap.set("n", "<leader>bd", ":bd<CR>") -- Delete a tab
