@@ -48,3 +48,15 @@ keymap.set("n", "<leader>tmd", ":TableModeDisable<CR>") -- disable table mode
 -- markdown preview
 keymap.set("n", "<leader>mdp", ":MarkdownPreview<CR>") -- open markdown preview
 keymap.set("n", "<leader>mdps", ":MarkdownPreviewStop<CR>") -- close markdown preview
+
+-- barbar
+keymap.set("n", "<C-;>", ":BufferPrevious<CR>") -- Move to previous
+keymap.set("n", "<C-'>", ":BufferNext<CR>") -- Move to next
+keymap.set("n", "<C-<>", ":BufferMovePrevious<CR>") -- Re-order to previous
+keymap.set("n", "<C->>", ":BufferMoveNext<CR>") -- Re-order to next
+keymap.set("n", "<C-p>", ":BufferPin<CR>") -- Pin/unpin buffer
+keymap.set("n", "<C-c>", ":BufferClose<CR>") -- Close buffer
+keymap.set("n", "<leader>bb", ":BufferOrderByBufferNumber<CR>") -- Order By Buffer Number
+keymap.set("n", "<leader>bd", ":BufferOrderByDirectory<CR>") -- Order By Directory
+keymap.set("n", "<leader>bl", ":BufferOrderByLanguage<CR>") -- Order By Language
+keymap.set("n", "<leader>bw", ":BufferOrderByWindowNumber<CR>") -- Order By Window Number

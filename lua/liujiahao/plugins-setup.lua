@@ -109,6 +109,12 @@ return packer.startup(function(use)
 	})
 	use("dhruvasagar/vim-table-mode") -- markdown table format util
 
+	-- about tab
+	use({
+		"romgrk/barbar.nvim",
+		require = { "kyazdani42/nvim-web-devicons" },
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
