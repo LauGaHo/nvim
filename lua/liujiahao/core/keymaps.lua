@@ -28,6 +28,8 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>ft", ":NvimTreeFindFile<CR>")
+keymap.set("n", "<leader>ct", ":NvimTreeCollapse<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
