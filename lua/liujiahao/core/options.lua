@@ -1,28 +1,49 @@
 local opt = vim.opt -- for conciseness
 
--- line numbers
+-- 使用相对行号
 opt.relativenumber = true
 opt.number = true
 
--- tab & indentation
+-- jkhl 移动光标时周围保留 8 行
+opt.scrolloff = 8
+opt.sidescrolloff = 8
+
+-- 缩进 2 个空格等于一个 Tab
 opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftround = true
+
+-- >> << 时移动的长度
 opt.shiftwidth = 2
+
+-- 空格替代 Tab
 opt.expandtab = true
+
+-- 新行对齐当前行
 opt.autoindent = true
+opt.smartindent = true
 
--- line wrapping
-opt.wrap = false
+-- 禁止折行
+opt.wrap = true
 
--- search settings
+-- 搜索大小写不敏感，除非包含大小写
 opt.ignorecase = true
 opt.smartcase = true
 
--- cursor line
+-- 高亮所在行
 opt.cursorline = true
 
--- appearance
+-- 右侧参考线
+opt.colorcolumn = "80"
+
+-- 当文件被外部程序修改时，自动加载
+opt.autoread = true
+
+-- 样式
 opt.termguicolors = true
 opt.background = "dark"
+
+-- 显示左侧图标指示列
 opt.signcolumn = "yes"
 
 -- backspace
@@ -31,7 +52,7 @@ opt.backspace = "indent,eol,start"
 -- clipboard
 opt.clipboard:append("unnamedplus")
 
--- split windows
+-- split window 从下边和右边出现
 opt.splitright = true
 opt.splitbelow = true
 
