@@ -97,7 +97,8 @@ return packer.startup(function(use)
 
 	-- about git
 	use("lewis6991/gitsigns.nvim") -- git signs plugins
-	use("kdheepak/lazygit.nvim")
+	use("kdheepak/lazygit.nvim") -- git GUI
+	use("tpope/vim-fugitive") -- git blame
 
 	-- about markdown
 	-- markdown-preview installed without yarn or npm

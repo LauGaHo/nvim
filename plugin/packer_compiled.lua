@@ -229,6 +229,11 @@ _G.packer_plugins = {
     path = "/Users/liujiahao/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/liujiahao/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/Users/liujiahao/.local/share/nvim/site/pack/packer/start/vim-maximizer",
