@@ -1,3 +1,4 @@
+-- 全局快捷键
 vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
@@ -71,3 +72,29 @@ keymap.set("n", "<leader>0", ":BufferLineGoToBuffer 0<CR>") -- Goto buffer in po
 keymap.set("n", "<leader>bp", ":BufferLinePick<CR>") -- Pick a tab
 keymap.set("n", "<leader>pd", ":BufferLinePickClose<CR>") -- Pick a tab to delete
 keymap.set("n", "<leader>bd", ":bd<CR>") -- Delete a tab
+
+-- 导出插件快捷键
+local pluginKeys = {}
+
+-- nvim-tree
+pluginKeys.nvimTreeList = {
+	-- 打开文件或文件夹
+	{ key = { "<CR>", "o", "<2-LeftMouse>" }, action = "edit" },
+	-- 分屏打开文件
+	{ key = "v", action = "vsplit" }, -- 垂直分屏
+	{ key = "h", action = "split" }, -- 水平分屏
+	-- 显示隐藏文件
+	{ key = "i", action = "toggle_custom" }, -- 对应 filters 中的 custom (node_modules)
+	{ key = ".", action = "toggle_dotfiles" }, -- 对应 filters 中的隐藏文件 (.file)
+	-- 文件操作
+	{ key = "<F5>", action = "refresh" },
+	{ key = "a", action = "create" },
+	{ key = "d", action = "remove" },
+	{ key = "r", action = "rename" },
+	{ key = "x", action = "cut" },
+	{ key = "c", action = "copy" },
+	{ key = "p", action = "paste" },
+}
+
+-- 返回 pluginKeys
+return pluginKeys
