@@ -53,6 +53,7 @@ return packer.startup(function(use)
 
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
+	use("arkav/lualine-lsp-progress") -- bufferline 加载进度条
 
 	-- fuzzy finding
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dep
