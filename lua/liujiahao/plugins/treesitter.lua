@@ -9,6 +9,13 @@ treesitter.setup({
 	-- enable syntax highlighting
 	highlight = {
 		enable = true,
+		-- 启用了 treesitter 语法高亮，则禁用 vim 的正则语法高亮
+		additional_vim_regex_highlighting = false,
+	},
+	-- 启用增量选择模块
+	incremental_selection = {
+		enable = true,
+		keymaps = require("liujiahao.core.keymaps").treesitterList,
 	},
 	-- enable indentation
 	indent = { enable = true },

@@ -88,6 +88,8 @@ return packer.startup(function(use)
 	use({
 		"nvim-treesitter/nvim-treesitter",
 		run = function()
+			-- 每次更新 treesitter 都会更新 Language Server (这个命令时后面加上去的，报错请注意！)
+			vim.cmd([[TSUpdate]])
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
