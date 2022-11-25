@@ -112,8 +112,13 @@ return packer.startup(function(use)
 	use("dhruvasagar/vim-table-mode") -- markdown table format util
 
 	-- about tab
-	-- bufferline
-	use("akinsho/bufferline.nvim")
+	use("akinsho/bufferline.nvim") -- bufferline
+
+	-- about start page
+	use("glepnir/dashboard-nvim") -- dashboard-nvim
+
+	-- project
+	use("ahmedkhalf/project.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
