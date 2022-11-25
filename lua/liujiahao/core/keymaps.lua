@@ -72,6 +72,8 @@ keymap.set("n", "<leader>0", ":BufferLineGoToBuffer 0<CR>") -- Goto buffer in po
 keymap.set("n", "<leader>bp", ":BufferLinePick<CR>") -- Pick a tab
 keymap.set("n", "<leader>pd", ":BufferLinePickClose<CR>") -- Pick a tab to delete
 keymap.set("n", "<leader>bd", ":bd<CR>") -- Delete a tab
+keymap.set("n", "<leader>bh", ":BufferLineCloseLeft<CR>") -- Close all tab on the left of the current tab
+keymap.set("n", "<leader>bl", ":BufferLineCloseRight<CR>") -- Close all tab on the right of the current tab
 
 -- 导出插件快捷键
 local pluginKeys = {}
