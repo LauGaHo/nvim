@@ -18,7 +18,7 @@ treesitter.setup({
 		keymaps = require("liujiahao.core.keymaps").treesitterList,
 	},
 	-- enable indentation
-	indent = { enable = true },
+	indent = { enable = true }, -- 按 = 号自动缩进
 	-- enable autotagging (w/ nvim-ts-autotag plugin)
 	autotag = { enable = true },
 	-- ensure these language parsers are installed
