@@ -149,5 +149,31 @@ pluginKeys.lspconfigList = function(client, bufnr)
 	end
 end
 
+-- nvim-cmp
+pluginKeys.cmp = function(cmp)
+	return {
+		-- 出现补全
+		["<C-s>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
+		-- 取消补全弹框
+		["<C-c>"] = cmp.mapping({
+			i = cmp.mapping.abort(),
+			c = cmp.mapping.close(),
+		}),
+		-- 上一个
+		["<C-k>"] = cmp.mapping.select_prev_item(),
+		-- 下一个
+		["<C-j>"] = cmp.mapping.select_next_item(),
+		-- 确认
+		["<CR>"] = cmp.mapping.confirm({
+			select = true,
+			behavior = cmp.ConfirmBehavior.Replace,
+		}),
+		-- 滚动文档窗口
+		["<C-u>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), { "i", "c" }),
+		-- 滚动文档窗口
+		["<C-d>"] = cmp.mapping(cmp.mapping.scroll_docs(4), { "i", "c" }),
+	}
+end
+
 -- 返回 pluginKeys
 return pluginKeys
