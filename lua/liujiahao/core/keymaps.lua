@@ -175,5 +175,28 @@ pluginKeys.cmp = function(cmp)
 	}
 end
 
+-- Lspsaga
+pluginKeys.lspsaga = {
+	finder_action_keys = {
+		open = { "o", "<CR>" },
+		vsplit = "s",
+		split = "i",
+		tabe = "t",
+		quit = { "q", "<ESC>" },
+	},
+	code_action_keys = {
+		quit = "q",
+		exec = "<CR>",
+	},
+	definition_action_keys = {
+		edit = "<C-c>o",
+		vsplit = "<C-c>v",
+		split = "<C-c>i",
+		tabe = "<C-c>t",
+		quit = "q",
+	},
+	rename_action_quit = "<C-c>",
+}
+
 -- 返回 pluginKeys
 return pluginKeys
