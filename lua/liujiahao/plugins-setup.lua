@@ -60,14 +60,14 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
 
 	-- autocompletion
-	use("hrsh7th/nvim-cmp")
-	use("hrsh7th/cmp-buffer")
-	use("hrsh7th/cmp-path")
+	use("hrsh7th/nvim-cmp") -- 补全引擎
+	use("hrsh7th/cmp-buffer") -- buffer 补全源
+	use("hrsh7th/cmp-path") -- 路径补全源
 
 	-- snippets
 	use("L3MON4D3/LuaSnip")
 	use("saadparwaiz1/cmp_luasnip")
-	use("rafamadriz/friendly-snippets")
+	use("rafamadriz/friendly-snippets") -- 包含大部分常用语言的代码段
 
 	-- managing & installing lsp servers, linters & formatters
 	use("williamboman/mason.nvim")
@@ -75,7 +75,7 @@ return packer.startup(function(use)
 
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig")
-	use("hrsh7th/cmp-nvim-lsp")
+	use("hrsh7th/cmp-nvim-lsp") -- Neovim 内置 LSP 提供的补全内容
 	use({ "glepnir/lspsaga.nvim", branch = "main" })
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
