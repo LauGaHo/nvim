@@ -18,16 +18,12 @@ bufferline.setup({
 			},
 		},
 		-- 使用 nvim 内置 LSP
-		diagnostic = "nvim_lsp",
+		diagnostics = "nvim_lsp",
 		-- 未知有什么用
 		-- 显示 LSP 报错图标
 		diagnostics_indicator = function(count, level, diagnostics_dict, context)
-			local s = " "
-			for e, n in pairs(diagnostics_dict) do
-				local sym = e == "error" and " " or (e == "warning" and " " or "")
-				s = s .. n .. sym
-			end
-			return s
+			local icon = level:match("error") and " " or " "
+			return " " .. icon .. count
 		end,
 	},
 })
