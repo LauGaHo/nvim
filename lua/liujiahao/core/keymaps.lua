@@ -23,10 +23,10 @@ keymap.set("n", "<leader>sk", ":vertical resize +20<CR>") -- window width +20
 keymap.set("n", "<leader>si", ":resize +5<CR>") -- window height +20
 keymap.set("n", "<leader>sm", ":resize -5<CR>") -- window height -20
 
-keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
-keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
-keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
-keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
+-- keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
+-- keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
+-- keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
+-- keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
 
 -- vim-maximizer
 keymap.set("n", "<leader>mw", ":MaximizerToggle<CR>")
@@ -64,11 +64,11 @@ keymap.set("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>") -- Goto buffer in po
 keymap.set("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>") -- Goto buffer in position
 keymap.set("n", "<leader>4", ":BufferLineGoToBuffer 4<CR>") -- Goto buffer in position
 keymap.set("n", "<leader>5", ":BufferLineGoToBuffer 5<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>") -- Goto buffer in position
-keymap.set("n", "<leader>0", ":BufferLineGoToBuffer 0<CR>") -- Goto buffer in position
+-- keymap.set("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>") -- Goto buffer in position
+-- keymap.set("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>") -- Goto buffer in position
+-- keymap.set("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>") -- Goto buffer in position
+-- keymap.set("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>") -- Goto buffer in position
+-- keymap.set("n", "<leader>0", ":BufferLineGoToBuffer 0<CR>") -- Goto buffer in position
 keymap.set("n", "<leader>bp", ":BufferLinePick<CR>") -- Pick a tab
 keymap.set("n", "<leader>pd", ":BufferLinePickClose<CR>") -- Pick a tab to delete
 keymap.set("n", "<leader>bd", ":bd<CR>") -- Delete a tab
