@@ -55,10 +55,10 @@ keymap.set("n", "<leader>mdp", ":MarkdownPreview<CR>") -- open markdown preview
 keymap.set("n", "<leader>mdps", ":MarkdownPreviewStop<CR>") -- close markdown preview
 
 -- bufferline
-keymap.set("n", "<C-;>", ":BufferLineCyclePrev<CR>") -- Move to previous
-keymap.set("n", "<C-'>", ":BufferLineCycleNext<CR>") -- Move to next
-keymap.set("n", "<C-<>", ":BufferLineMovePrev<CR>") -- Re-order to previous
-keymap.set("n", "<C->>", ":BufferLineMoveNext<CR>") -- Re-order to next
+keymap.set("n", "<leader>j", ":BufferLineCyclePrev<CR>") -- Move to previous
+keymap.set("n", "<leader>k", ":BufferLineCycleNext<CR>") -- Move to next
+keymap.set("n", "<leader>h", ":BufferLineMovePrev<CR>") -- Re-order to previous
+keymap.set("n", "<leader>l", ":BufferLineMoveNext<CR>") -- Re-order to next
 keymap.set("n", "<leader>1", ":BufferLineGoToBuffer 1<CR>") -- Goto buffer in position
 keymap.set("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>") -- Goto buffer in position
 keymap.set("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>") -- Goto buffer in position
