@@ -120,7 +120,16 @@ return packer.startup(function(use)
 	use("akinsho/bufferline.nvim") -- bufferline
 
 	-- about start page
-	use("glepnir/dashboard-nvim") -- dashboard-nvim
+	-- use("glepnir/dashboard-nvim") -- dashboard-nvim
+	use({
+		"glepnir/dashboard-nvim",
+		event = "VimEnter",
+		config = function()
+			local db = require("liujiahao.plugins.dashboard")
+			db()
+		end,
+		requires = { "nvim-tree/nvim-web-devicons" },
+	})
 
 	-- project
 	use("ahmedkhalf/project.nvim")
