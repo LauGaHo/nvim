@@ -142,6 +142,11 @@ _G.packer_plugins = {
     path = "/Users/liujiahao/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
     url = "https://github.com/kdheepak/lazygit.nvim"
   },
+  ["leap.nvim"] = {
+    loaded = true,
+    path = "/Users/liujiahao/.local/share/nvim/site/pack/packer/start/leap.nvim",
+    url = "https://github.com/ggandor/leap.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/liujiahao/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
