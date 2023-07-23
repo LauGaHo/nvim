@@ -134,7 +134,7 @@ pluginKeys.lspconfigList = function(client, bufnr)
 	local opts = { noremap = true, silent = true, buffer = bufnr }
 
 	-- set keybinds
-	keymap.set("n", "gf", ":Lspsaga lsp_finder<CR>", opts) -- show definition, references
+	keymap.set("n", "gf", ":Lspsaga finder<CR>", opts) -- show definition, references
 	keymap.set("n", "gd", ":Lspsaga goto_definition<CR>", opts) -- got to declaration
 	keymap.set("n", "pd", ":Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
 	-- keymap.set("n", "gi", ":lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation

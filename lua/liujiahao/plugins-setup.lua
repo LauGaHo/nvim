@@ -77,8 +77,11 @@ return packer.startup(function(use)
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp") -- Neovim 内置 LSP 提供的补全内容
 	use({
-		"glepnir/lspsaga.nvim",
-		branch = "main",
+		"nvimdev/lspsaga.nvim",
+		after = "nvim-lspconfig",
+		config = function()
+			require("lspsaga").setup({})
+		end,
 	})
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
