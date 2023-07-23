@@ -123,7 +123,6 @@ return packer.startup(function(use)
 	use("akinsho/bufferline.nvim") -- bufferline
 
 	-- about start page
-	-- use("glepnir/dashboard-nvim") -- dashboard-nvim
 	use({
 		"glepnir/dashboard-nvim",
 		event = "VimEnter",
