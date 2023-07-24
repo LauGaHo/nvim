@@ -4,7 +4,7 @@ if not setup then
 end
 
 -- 加载 keymaps.lua 文件中的导出插件快捷键
-local list_keys = require("liujiahao.core.keymaps").nvimTreeList
+local on_attach = require("liujiahao.core.keymaps").nvimTreeList
 
 -- recommended settings from nvim-tree documentation
 vim.g.loaded = 1
@@ -13,6 +13,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
 nvimtree.setup({
+	on_attach = on_attach,
 	-- project plugin 需要这样设置
 	update_cwd = true,
 	update_focused_file = {
@@ -33,7 +34,7 @@ nvimtree.setup({
 		-- 自定义列表中快捷键
 		mappings = {
 			custom_only = false,
-			list = list_keys,
+			-- list = list_keys,
 		},
 	},
 	renderer = {
