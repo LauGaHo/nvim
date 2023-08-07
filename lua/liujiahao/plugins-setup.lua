@@ -141,6 +141,11 @@ return packer.startup(function(use)
 
 	use("ggandor/leap.nvim")
 
+	use({
+		"kkoomen/vim-doge",
+		run = ":call doge#install()",
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

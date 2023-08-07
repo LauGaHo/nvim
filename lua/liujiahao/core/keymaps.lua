@@ -31,6 +31,9 @@ keymap.set("n", "<leader>sm", ":resize -5<CR>") -- window height -20
 -- vim-maximizer
 keymap.set("n", "<leader>mw", ":MaximizerToggle<CR>")
 
+-- vim-doge
+keymap.set("n", "<leader>dg", ":DogeGenerate<CR>")
+
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>ft", ":NvimTreeFindFile<CR>")
