@@ -1,5 +1,5 @@
 -- Packer 插件管理
-require("liujiahao.plugins-setup")
+require("liujiahao.plugins-setup-lazy")
 -- Vim 基础配置
 require("liujiahao.core.options")
 -- Vim 键位映射
