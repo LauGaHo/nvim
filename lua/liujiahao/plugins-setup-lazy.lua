@@ -164,6 +164,14 @@ local plugins = {
 		"kkoomen/vim-doge",
 		build = ":call doge#install()",
 	},
+
+	-- todo-comment plugin
+	{
+		"folke/todo-comments.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		-- leave it empty to use the default setttings
+		opts = {},
+	},
 }
 
 local opts = {} -- 注意要定義這個變量
