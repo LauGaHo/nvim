@@ -31,11 +31,6 @@ nvimtree.setup({
 		-- 显示相对行号
 		relativenumber = true,
 		signcolumn = "yes",
-		-- 自定义列表中快捷键
-		mappings = {
-			custom_only = false,
-			-- list = list_keys,
-		},
 	},
 	renderer = {
 		icons = {
