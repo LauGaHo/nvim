@@ -39,7 +39,7 @@
   "vim-doge": { "branch": "master", "commit": "c61a410e783bf5ce592df080992a9aceda0858e0" },
   "vim-fugitive": { "branch": "master", "commit": "b3b838d690f315a503ec4af8c634bdff3b200aaf" },
   "vim-maximizer": { "branch": "master", "commit": "2e54952fe91e140a2e69f35f22131219fcd9c5f1" },
-  "vim-nightfly-guicolors": { "branch": "master", "commit": "456d7b392cd0fa6c94aefe8aa083ab1a7b4083bc" },
+  "vim-nightfly-guicolors": { "branch": "master", "commit": "06eaaaa8717538a7ce96b13c137da8c9eaa84ec8" },
   "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },
   "vim-table-mode": { "branch": "master", "commit": "9555a3e6e5bcf285ec181b7fc983eea90500feb4" },
   "vim-tmux-navigator": { "branch": "master", "commit": "cdd66d6a37d991bba7997d593586fc51a5b37aa8" }
