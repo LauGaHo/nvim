@@ -153,6 +153,8 @@ local plugins = {
 	-- indent-blankline
 	{
 		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		opts = {},
 		event = "VeryLazy",
 	},
 
