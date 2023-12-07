@@ -75,8 +75,8 @@ local plugins = {
 	-- configuring lsp server
 	{
 		"neovim/nvim-lspconfig",
-		cmd = { "Mason" },
-		event = { "BufReadPost", "BufNewFile" },
+		-- cmd = { "Mason" },
+		-- event = { "BufReadPost", "BufNewFile" },
 	},
 	"hrsh7th/cmp-nvim-lsp", -- Neovim 內置 LSP 提供的補全內容
 	{
