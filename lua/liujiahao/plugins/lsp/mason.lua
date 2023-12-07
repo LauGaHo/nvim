@@ -13,6 +13,8 @@ if not mason_null_ls_status then
 	return
 end
 
+mason.setup()
+
 mason_lspconfig.setup({
 	ensure_installed = {
 		"rust_analyzer",
@@ -31,5 +33,3 @@ mason_null_ls.setup({
 		"eslint_d",
 	},
 })
-
-mason.setup()
