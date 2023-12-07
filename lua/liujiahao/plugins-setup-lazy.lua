@@ -174,6 +174,17 @@ local plugins = {
 		-- leave it empty to use the default setttings
 		opts = {},
 	},
+
+	-- noice
+	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		opt = {},
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"rcarriga/nvim-notify",
+		},
+	},
 }
 
 local opts = {} -- 注意要定義這個變量
