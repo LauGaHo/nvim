@@ -105,6 +105,8 @@ local plugins = {
 	-- treesitter
 	{
 		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
+		config = require("liujiahao.plugins.treesitter"),
 		event = "VeryLazy",
 	},
 
