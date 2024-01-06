@@ -5,7 +5,7 @@ opt.relativenumber = true
 opt.number = true
 
 -- jkhl 移动光标时周围保留 8 行
-opt.scrolloff = 8
+opt.scrolloff = 999
 opt.sidescrolloff = 8
 
 -- 缩进 2 个空格等于一个 Tab
