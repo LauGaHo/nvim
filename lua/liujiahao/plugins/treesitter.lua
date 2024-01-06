@@ -43,6 +43,7 @@ local function setup_treesitter()
 			"rust",
 		},
 		-- auto install above language parsers
+		-- auto_install mean that when you open a file which is not in ensure_installed, it will auto install the language parsers
 		auto_install = true,
 	})
 end
