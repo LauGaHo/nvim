@@ -17,7 +17,10 @@ local plugins = {
 	"nvim-lua/plenary.nvim",
 
 	-- preferred colorscheme
-	"bluz71/vim-nightfly-guicolors",
+	{
+		"bluz71/vim-nightfly-guicolors",
+		config = require("liujiahao.core.colorscheme"),
+	},
 
 	-- tmux & split window navigation
 	"christoomey/vim-tmux-navigator",

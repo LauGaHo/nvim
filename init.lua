@@ -5,7 +5,7 @@ require("liujiahao.core.options")
 -- Vim 键位映射
 require("liujiahao.core.keymaps")
 -- 主题设置
-require("liujiahao.core.colorscheme")
+-- require("liujiahao.core.colorscheme")
 
 -- 各插件配置
 require("liujiahao.plugins.comment")
