@@ -42,5 +42,5 @@ treesitter.setup({
 		"rust",
 	},
 	-- auto install above language parsers
-	-- auto_install = false,
+	auto_install = true,
 })
