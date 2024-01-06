@@ -33,7 +33,10 @@ local plugins = {
 	"vim-scripts/ReplaceWithRegister",
 
 	-- commenting with gc
-	"numToStr/Comment.nvim",
+	{
+		"numToStr/Comment.nvim",
+		config = require("liujiahao.plugins.comment"),
+	},
 
 	-- file explorer
 	{

@@ -8,7 +8,7 @@ require("liujiahao.core.keymaps")
 -- require("liujiahao.core.colorscheme")
 
 -- 各插件配置
-require("liujiahao.plugins.comment")
+-- require("liujiahao.plugins.comment")
 require("liujiahao.plugins.nvim-tree")
 require("liujiahao.plugins.lualine")
 require("liujiahao.plugins.telescope")
