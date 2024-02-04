@@ -113,6 +113,11 @@ local plugins = {
 		event = "VeryLazy",
 	},
 
+	-- treesitter textobjects
+	{
+		"nvim-treesitter/nvim-treesitter-textobjects",
+	},
+
 	-- auto closing
 	{
 		"windwp/nvim-autopairs",
