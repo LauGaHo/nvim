@@ -23,6 +23,7 @@ mason_lspconfig.setup({
 		"cssls",
 		"tailwindcss",
 		"lua_ls",
+		"marksman",
 	},
 })
 
@@ -31,5 +32,6 @@ mason_null_ls.setup({
 		"prettier",
 		"stylua",
 		"eslint_d",
+		"marksman",
 	},
 })
